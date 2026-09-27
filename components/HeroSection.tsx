@@ -11,12 +11,55 @@ import {
   ScrollVelocityRow,
 } from './ui/scroll-based-velocity';
 
+const RETAIL_PARTNERS_EN = [
+  'Carrefour UAE',
+  'LuLu Hypermarket',
+  'Spinneys',
+  'Waitrose UAE',
+  'Union Coop',
+  'Sharjah Cooperative',
+  'Ajman Markets Coop',
+  'ADNOC Oasis',
+  'ENOC Zoom',
+  'Emarat Plus',
+  'Amazon.ae',
+  'Noon',
+  'Talabat Mart',
+  'Careem Quik',
+  'Grandiose Supermarket',
+  'Choithrams',
+  'Al Maya Supermarkets',
+  'Nesto Hypermarket',
+];
+
+const RETAIL_PARTNERS_AR = [
+  'كارفور الإمارات',
+  'لولو هايبر ماركت',
+  'سبينس',
+  'ويتفروس',
+  'تعاونية الاتحاد',
+  'جمعية الشارقة التعاونية',
+  'أسواق عجمان التعاونية',
+  'واحة أدنوك',
+  'إينوك زووم',
+  'إمارات بلس',
+  'أمازون الإمارات',
+  'نون',
+  'طلبات مارت',
+  'كريم كويك',
+  'جرانديوس سوبرماركت',
+  'شويترامس',
+  'سوبرماركت المايا',
+  'نستو هايبر ماركت',
+];
+
 interface HeroSectionProps {
   onOpenConsultation?: () => void;
 }
 
 export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
   const { language, t, isRtl } = useLanguage();
+  const partners = isRtl ? RETAIL_PARTNERS_AR : RETAIL_PARTNERS_EN;
 
   return (
     <section className="hero">
@@ -76,31 +119,13 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
       {/* Infinite High-Velocity Retail & Strategic Partners Marquee */}
       <div className="logo-strip-velocity-wrapper" aria-label="Retail partners and key accounts">
         <ScrollVelocityContainer className="logo-strip-velocity">
-          <ScrollVelocityRow baseVelocity={2.8} direction={1}>
-            <span className="strip-item">Carrefour UAE</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Lulu Hypermarket</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Spinneys & Waitrose</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Union Coop</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">ADNOC Oasis</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">ENOC Zoom</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Emarat Plus</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Amazon.ae</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Noon Grocery</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Talabat Mart</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Grandiose</span>
-            <span className="velocity-dot">•</span>
-            <span className="strip-item">Al Maya Supermarkets</span>
-            <span className="velocity-dot">•</span>
+          <ScrollVelocityRow baseVelocity={2.5} direction={isRtl ? -1 : 1} numCopies={2}>
+            {partners.map((partner, idx) => (
+              <React.Fragment key={idx}>
+                <span className="strip-item">{partner}</span>
+                <span className="velocity-dot">•</span>
+              </React.Fragment>
+            ))}
           </ScrollVelocityRow>
         </ScrollVelocityContainer>
         <div className="velocity-fade velocity-fade-left" />

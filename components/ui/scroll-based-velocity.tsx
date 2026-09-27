@@ -11,11 +11,23 @@ export interface ScrollVelocityContainerProps
 export function ScrollVelocityContainer({
   children,
   className = "",
+  style,
   ...props
 }: ScrollVelocityContainerProps) {
   return (
     <div
-      className={`w-full overflow-hidden flex flex-col gap-3 relative select-none ${className}`}
+      className={`logo-strip-velocity ${className}`}
+      style={{
+        width: "100%",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "nowrap",
+        whiteSpace: "nowrap",
+        position: "relative",
+        userSelect: "none",
+        ...style,
+      }}
       {...props}
     >
       {children}
@@ -35,11 +47,12 @@ export interface ScrollVelocityRowProps
 
 export function ScrollVelocityRow({
   children,
-  baseVelocity = 3,
+  baseVelocity = 2.5,
   direction = 1,
   className = "",
-  numCopies = 6,
+  numCopies = 2,
   pauseOnHover = true,
+  style,
   ...props
 }: ScrollVelocityRowProps) {
   const baseX = useRef(0);
@@ -95,7 +108,7 @@ export function ScrollVelocityRow({
           direction *
           hoverMultiplier;
 
-        baseX.current += currentSpeed * delta * 12;
+        baseX.current += currentSpeed * delta * 20;
 
         if (contentWidth > 0) {
           if (baseX.current >= contentWidth) {
@@ -119,9 +132,20 @@ export function ScrollVelocityRow({
     return () => cancelAnimationFrame(animId);
   }, [baseVelocity, direction, contentWidth]);
 
+  const copiesCount = Math.max(numCopies, 2);
+
   return (
     <div
-      className={`overflow-hidden whitespace-nowrap flex flex-nowrap w-full ${className}`}
+      className={`logo-strip-velocity-row ${className}`}
+      style={{
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "nowrap",
+        width: "100%",
+        ...style,
+      }}
       onMouseEnter={() => {
         if (pauseOnHover) isHovered.current = true;
       }}
@@ -132,19 +156,45 @@ export function ScrollVelocityRow({
     >
       <div
         ref={containerRef}
-        className="flex flex-nowrap items-center will-change-transform"
-        style={{ transform: "translate3d(0, 0, 0)" }}
+        className="logo-strip-velocity-track"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "nowrap",
+          alignItems: "center",
+          whiteSpace: "nowrap",
+          willChange: "transform",
+          transform: "translate3d(0, 0, 0)",
+        }}
       >
         <span
           ref={singleCopyRef}
-          className="inline-flex items-center gap-6 px-4 shrink-0"
+          className="logo-strip-velocity-group"
+          style={{
+            display: "inline-flex",
+            flexDirection: "row",
+            flexWrap: "nowrap",
+            alignItems: "center",
+            whiteSpace: "nowrap",
+            flexShrink: 0,
+            padding: "0 12px",
+          }}
         >
           {children}
         </span>
-        {Array.from({ length: Math.max(numCopies, 6) - 1 }).map((_, i) => (
+        {Array.from({ length: copiesCount - 1 }).map((_, i) => (
           <span
             key={i}
-            className="inline-flex items-center gap-6 px-4 shrink-0"
+            className="logo-strip-velocity-group"
+            style={{
+              display: "inline-flex",
+              flexDirection: "row",
+              flexWrap: "nowrap",
+              alignItems: "center",
+              whiteSpace: "nowrap",
+              flexShrink: 0,
+              padding: "0 12px",
+            }}
             aria-hidden="true"
           >
             {children}

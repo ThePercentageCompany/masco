@@ -463,29 +463,67 @@ img {
   z-index: 1;
   width: 100%;
   max-width: 100%;
-  padding: 20px 0 12px;
+  padding: 16px 0;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .logo-strip-velocity {
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+.logo-strip-velocity-row {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+.logo-strip-velocity-track {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  will-change: transform;
+}
+
+.logo-strip-velocity-group {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 
 .logo-strip-velocity a,
 .logo-strip-velocity .strip-item {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 600;
   letter-spacing: -0.01em;
   opacity: 0.85;
   transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
+  display: inline-flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  margin: 0 10px;
 }
 
-.logo-strip-velocity a:hover {
+.logo-strip-velocity a:hover,
+.logo-strip-velocity .strip-item:hover {
   opacity: 1;
   color: var(--green-deep);
   transform: translateY(-1px);
@@ -493,10 +531,13 @@ img {
 
 .velocity-dot {
   color: var(--line);
-  font-size: 14px;
+  font-size: 13px;
   user-select: none;
-  display: inline-block;
+  display: inline-block !important;
   opacity: 0.85;
+  margin: 0 6px;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
 }
 
 .velocity-fade {
