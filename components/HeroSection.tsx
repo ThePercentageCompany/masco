@@ -67,7 +67,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
         className="hero-particles"
         quantity={110}
         ease={80}
-        color="#0e2a1f"
+        color={["#272B8D", "#E4181D", "#01498D"]}
         refresh
       />
 
@@ -78,7 +78,7 @@ export default function HeroSection({ onOpenConsultation }: HeroSectionProps) {
 
         <h1>
           {t.hero.headline}{' '}
-          <span style={{ color: 'var(--green-deep)' }}>
+          <span style={{ color: 'var(--masco-red)' }}>
             {t.hero.headlineHighlight}
           </span>
         </h1>

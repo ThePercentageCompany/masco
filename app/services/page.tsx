@@ -79,7 +79,7 @@ export default function ServicesPage() {
                       {service.title}
                     </h2>
 
-                    <p style={{ fontSize: '16px', fontWeight: 600, color: 'var(--green-deep)', marginBottom: '16px' }}>
+                    <p style={{ fontSize: '16px', fontWeight: 600, color: 'var(--masco-blue)', marginBottom: '16px' }}>
                       {service.summary}
                     </p>
 
@@ -107,24 +107,24 @@ export default function ServicesPage() {
                   {/* Right Column: Deliverables & Metrics */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                     <div style={{ padding: '24px', background: 'var(--bg-elev)', borderRadius: '20px', border: '1px solid var(--line)' }}>
-                      <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '14px' }}>
+                      <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '14px' }}>
                         Strategic Deliverables
                       </h4>
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                         {service.deliverables.map((deliv, dIdx) => (
                           <div key={dIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '13px', color: 'var(--ink)' }}>
-                            <CheckCircle2 size={16} style={{ color: 'var(--green-deep)', flexShrink: 0, marginTop: '2px' }} />
+                            <CheckCircle2 size={16} style={{ color: 'var(--masco-blue)', flexShrink: 0, marginTop: '2px' }} />
                             <span>{deliv}</span>
                           </div>
                         ))}
                       </div>
                     </div>
 
-                    <div style={{ padding: '20px 24px', background: 'var(--green-dark)', borderRadius: '20px', color: '#ffffff' }}>
-                      <span style={{ fontSize: '11px', color: 'var(--green)', fontWeight: 700, textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
+                    <div style={{ padding: '20px 24px', background: 'linear-gradient(135deg, #0c1033 0%, #161c52 100%)', borderRadius: '20px', color: '#ffffff' }}>
+                      <span style={{ fontSize: '11px', color: 'var(--masco-red)', fontWeight: 700, textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
                         Measurable Impact KPI
                       </span>
-                      <p style={{ margin: 0, fontSize: '14px', color: '#c5d8cc', fontWeight: 600 }}>
+                      <p style={{ margin: 0, fontSize: '14px', color: '#c5d2ea', fontWeight: 600 }}>
                         {service.metricsFocus}
                       </p>
                     </div>

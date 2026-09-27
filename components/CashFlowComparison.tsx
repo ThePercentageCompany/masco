@@ -25,23 +25,23 @@ export default function CashFlowComparison() {
 
         {/* Bar 1: Digital E-Commerce (14 Days) */}
         <div style={{ marginBottom: '24px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', fontSize: '14px', fontWeight: 700, color: 'var(--green-deep)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', fontSize: '14px', fontWeight: 700, color: 'var(--masco-blue)' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--green-deep)' }} />
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--masco-blue)' }} />
               <span>{data.digitalCycleLabel}</span>
             </span>
-            <span style={{ background: 'rgba(31, 138, 69, 0.1)', padding: '4px 10px', borderRadius: '8px', fontWeight: 800 }}>
+            <span style={{ background: 'rgba(39, 43, 141, 0.1)', color: 'var(--masco-blue)', padding: '4px 10px', borderRadius: '8px', fontWeight: 800 }}>
               ~14 Days Payout
             </span>
           </div>
           <div style={{ width: '100%', height: '20px', borderRadius: '999px', background: 'var(--white)', border: '1px solid var(--line)', overflow: 'hidden', display: 'flex' }}>
             <div
-              style={{ width: '15.5%', background: 'var(--green-deep)', height: '100%', borderRadius: '999px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: '8px', fontSize: '11px', color: '#ffffff', fontWeight: 800 }}
+              style={{ width: '15.5%', background: 'var(--masco-blue)', height: '100%', borderRadius: '999px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', paddingRight: '8px', fontSize: '11px', color: '#ffffff', fontWeight: 800 }}
             >
               14d
             </div>
           </div>
-          <p style={{ fontSize: '12px', color: 'var(--green-deep)', fontWeight: 600, marginTop: '6px' }}>
+          <p style={{ fontSize: '12px', color: 'var(--masco-blue)', fontWeight: 600, marginTop: '6px' }}>
             Rapid cash reinvestment into inventory and marketing cycles.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function CashFlowComparison() {
               <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--masco-red)' }} />
               <span>{data.hypermarketCycleLabel}</span>
             </span>
-            <span style={{ background: 'rgba(228, 24, 29, 0.08)', padding: '4px 10px', borderRadius: '8px', fontWeight: 800 }}>
+            <span style={{ background: 'rgba(228, 24, 29, 0.08)', color: 'var(--masco-red)', padding: '4px 10px', borderRadius: '8px', fontWeight: 800 }}>
               ~90 Days Payout
             </span>
           </div>
@@ -74,7 +74,7 @@ export default function CashFlowComparison() {
       <div style={{ overflowX: 'auto', marginBottom: '20px' }}>
         <table style={{ width: '100%', textAlign: 'start', fontSize: '13.5px', borderCollapse: 'collapse' }}>
           <thead>
-            <tr style={{ background: 'var(--green-dark)', color: '#ffffff' }}>
+            <tr style={{ background: 'linear-gradient(135deg, #0c1033 0%, #272B8D 100%)', color: '#ffffff' }}>
               <th style={{ padding: '12px 16px', textAlign: 'start', borderRadius: '12px 0 0 0' }}>Channel</th>
               <th style={{ padding: '12px 16px', textAlign: 'start' }}>Turnaround</th>
               <th style={{ padding: '12px 16px', textAlign: 'start' }}>Cash Velocity</th>
@@ -86,7 +86,7 @@ export default function CashFlowComparison() {
             {data.cashCycleComparison.map((row, idx) => (
               <tr key={idx} style={{ borderBottom: '1px solid var(--line)' }}>
                 <td style={{ padding: '14px 16px', fontWeight: 700, color: 'var(--ink)' }}>{row.channel}</td>
-                <td style={{ padding: '14px 16px', fontWeight: 800, color: 'var(--green-deep)' }}>{row.turnaroundDays} Days</td>
+                <td style={{ padding: '14px 16px', fontWeight: 800, color: 'var(--masco-blue)' }}>{row.turnaroundDays} Days</td>
                 <td style={{ padding: '14px 16px', color: 'var(--ink-soft)' }}>{row.cashVelocity}</td>
                 <td style={{ padding: '14px 16px', color: 'var(--ink-soft)' }}>{row.inventoryRisk}</td>
                 <td style={{ padding: '14px 16px', fontWeight: 600, color: 'var(--ink)' }}>{row.payoutFrequency}</td>

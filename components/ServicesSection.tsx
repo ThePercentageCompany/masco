@@ -53,7 +53,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
                 0{index + 1}
               </span>
               <h3>{service.title}</h3>
-              <p style={{ fontWeight: 600, color: 'var(--green-deep)', marginBottom: '8px' }}>
+              <p style={{ fontWeight: 600, color: 'var(--masco-blue)', marginBottom: '8px' }}>
                 {service.tagline}
               </p>
               <p>{service.desc}</p>
@@ -62,7 +62,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '14px' }}>
                   {service.deliverables.slice(0, 2).map((deliv, idx) => (
                     <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', color: 'var(--ink-soft)' }}>
-                      <CheckCircle2 size={13} style={{ color: 'var(--green-deep)', flexShrink: 0 }} />
+                      <CheckCircle2 size={13} style={{ color: 'var(--masco-blue)', flexShrink: 0 }} />
                       <span style={{ fontWeight: 500 }}>{deliv}</span>
                     </div>
                   ))}
@@ -71,7 +71,7 @@ export default function ServicesSection({ onOpenConsultation }: ServicesSectionP
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '12px', borderTop: '1px solid var(--line)' }}>
                   <Link
                     href={`/services#${service.id}`}
-                    style={{ fontSize: '13px', fontWeight: 700, color: 'var(--green-deep)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                    style={{ fontSize: '13px', fontWeight: 700, color: 'var(--masco-blue)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                   >
                     <span>{isRtl ? 'استكشف المزيد' : 'Learn more'}</span>
                     {isRtl ? <ArrowLeft size={13} /> : <ArrowRight size={13} />}

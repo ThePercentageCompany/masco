@@ -19,7 +19,7 @@ export default function AlSaadRoseCaseStudy() {
       <div className="cta-band" style={{ margin: 0 }}>
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
-            <span style={{ background: 'rgba(124, 255, 107, 0.15)', color: 'var(--green)', padding: '4px 12px', borderRadius: '999px', fontSize: '12px', fontWeight: 800 }}>
+            <span style={{ background: 'rgba(228, 24, 29, 0.18)', color: '#ff7b7f', padding: '4px 12px', borderRadius: '999px', fontSize: '12px', fontWeight: 800 }}>
               {data.tag} • {data.period}
             </span>
           </div>
@@ -31,7 +31,7 @@ export default function AlSaadRoseCaseStudy() {
           <h1 style={{ fontSize: 'clamp(30px, 4.5vw, 48px)', color: '#ffffff', fontWeight: 800, marginBottom: '12px' }}>
             {data.title}
           </h1>
-          <p style={{ fontSize: '16px', color: '#c5d8cc', lineHeight: 1.6, marginBottom: '20px' }}>
+          <p style={{ fontSize: '16px', color: '#d8e2f0', lineHeight: 1.6, marginBottom: '20px' }}>
             {data.subtitle}
           </p>
 
@@ -74,7 +74,7 @@ export default function AlSaadRoseCaseStudy() {
                     <span style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--muted)', display: 'block' }}>
                       Brand Positioning
                     </span>
-                    <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--green-deep)' }}>
+                    <span style={{ fontSize: '14px', fontWeight: 700, color: 'var(--masco-blue)' }}>
                       {concept.positioning}
                     </span>
                   </div>
@@ -99,7 +99,7 @@ export default function AlSaadRoseCaseStudy() {
                 </div>
               </div>
 
-              <div style={{ paddingTop: '14px', borderTop: '1px solid var(--line)', fontSize: '12px', fontWeight: 700, color: 'var(--green-deep)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ paddingTop: '14px', borderTop: '1px solid var(--line)', fontSize: '12px', fontWeight: 700, color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <CheckCircle2 size={14} />
                 <span>Isolates modern retail price points from discount trade.</span>
               </div>
@@ -124,9 +124,9 @@ export default function AlSaadRoseCaseStudy() {
             fill
             className="object-cover"
           />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(14,42,31,0.85) 0%, transparent 60%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(12, 16, 51, 0.88) 0%, transparent 60%)' }} />
           <div style={{ position: 'absolute', bottom: '20px', left: '20px', right: '20px', color: '#ffffff' }}>
-            <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: 'var(--green)', display: 'block' }}>
+            <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: '#ff7b7f', display: 'block' }}>
               Al Saad Rose Phase 1 Selection
             </span>
             <p style={{ margin: '4px 0 0', fontSize: '16px', fontWeight: 800 }}>
@@ -149,7 +149,7 @@ export default function AlSaadRoseCaseStudy() {
               </div>
 
               <h3 style={{ fontSize: '18px', marginBottom: '4px' }}>{sku.name}</h3>
-              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--green-deep)', display: 'block', marginBottom: '10px' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--masco-blue)', display: 'block', marginBottom: '10px' }}>
                 {sku.category}
               </span>
               <p style={{ fontSize: '13px', marginBottom: '16px' }}>{sku.keyAttributes}</p>
@@ -179,7 +179,7 @@ export default function AlSaadRoseCaseStudy() {
           >
             {isProtectedViewUnlocked ? (
               <>
-                <Unlock size={14} style={{ color: 'var(--green-deep)' }} />
+                <Unlock size={14} style={{ color: 'var(--masco-blue)' }} />
                 <span>Proposal View (Active)</span>
               </>
             ) : (
@@ -212,7 +212,7 @@ export default function AlSaadRoseCaseStudy() {
                 <h3 style={{ fontSize: '15px', color: 'var(--ink)', margin: '0 0 8px' }}>
                   {item.label}
                 </h3>
-                <div style={{ fontSize: '24px', fontWeight: 900, color: 'var(--green-deep)', marginBottom: '10px' }}>
+                <div style={{ fontSize: '24px', fontWeight: 900, color: 'var(--masco-blue)', marginBottom: '10px' }}>
                   {item.value}
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--ink-soft)', margin: '0 0 16px', lineHeight: 1.5 }}>
@@ -220,7 +220,7 @@ export default function AlSaadRoseCaseStudy() {
                 </p>
               </div>
 
-              <div style={{ paddingTop: '10px', borderTop: '1px solid var(--line)', fontSize: '12px', fontWeight: 600, color: 'var(--green-deep)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <div style={{ paddingTop: '10px', borderTop: '1px solid var(--line)', fontSize: '12px', fontWeight: 600, color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <CheckCircle2 size={14} />
                 <span>{item.benefit}</span>
               </div>
@@ -232,7 +232,7 @@ export default function AlSaadRoseCaseStudy() {
       {/* 5. Execution Next Steps */}
       <div className="cta-band" style={{ margin: 0 }}>
         <div>
-          <span style={{ background: 'rgba(124, 255, 107, 0.15)', color: 'var(--green)', padding: '4px 12px', borderRadius: '999px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', display: 'inline-block', marginBottom: '12px' }}>
+          <span style={{ background: 'rgba(228, 24, 29, 0.18)', color: '#ff7b7f', padding: '4px 12px', borderRadius: '999px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', display: 'inline-block', marginBottom: '12px' }}>
             Next Implementation Milestones
           </span>
           <h2>{data.nextStepsTitle}</h2>
@@ -250,14 +250,14 @@ export default function AlSaadRoseCaseStudy() {
                   gap: '14px',
                 }}
               >
-                <span style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--green)', color: 'var(--green-dark)', fontWeight: 900, fontSize: '13px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <span style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--masco-red)', color: '#ffffff', fontWeight: 900, fontSize: '13px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   {step.step}
                 </span>
                 <div>
                   <h4 style={{ fontSize: '15px', color: '#ffffff', margin: '0 0 4px', fontWeight: 700 }}>
                     {step.title}
                   </h4>
-                  <p style={{ fontSize: '13px', color: '#c5d8cc', margin: 0, lineHeight: 1.5 }}>
+                  <p style={{ fontSize: '13px', color: '#d8e2f0', margin: 0, lineHeight: 1.5 }}>
                     {step.desc}
                   </p>
                 </div>

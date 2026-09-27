@@ -21,7 +21,7 @@ export default function RoadmapSection() {
             <span className="step-n">0{step.num}</span>
             <h3>{step.title}</h3>
             <p>{step.desc}</p>
-            <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid var(--line)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', color: 'var(--green-deep)', fontWeight: 600 }}>
+            <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid var(--line)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12.5px', color: 'var(--masco-blue)', fontWeight: 600 }}>
               <CheckCircle2 size={14} style={{ flexShrink: 0 }} />
               <span>{step.keyOutcome}</span>
             </div>

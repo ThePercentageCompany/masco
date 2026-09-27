@@ -73,9 +73,9 @@ export default function ProblemSolutionSection() {
         </article>
 
         {/* Right Column: MASCO Solution */}
-        <article className="feature-card" style={{ borderLeft: '4px solid var(--green-deep)' }}>
+        <article className="feature-card" style={{ borderLeft: '4px solid var(--masco-blue)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-            <span className="step-n" style={{ color: 'var(--green-deep)', background: 'rgba(31, 138, 69, 0.08)' }}>
+            <span className="step-n" style={{ color: 'var(--masco-blue)', background: 'rgba(39, 43, 141, 0.08)' }}>
               02 • Protected Growth
             </span>
           </div>
@@ -101,8 +101,8 @@ export default function ProblemSolutionSection() {
                     width: '20px',
                     height: '20px',
                     borderRadius: '50%',
-                    background: 'rgba(31, 138, 69, 0.12)',
-                    color: 'var(--green-deep)',
+                    background: 'rgba(39, 43, 141, 0.12)',
+                    color: 'var(--masco-blue)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -127,7 +127,7 @@ export default function ProblemSolutionSection() {
           </div>
 
           <div style={{ marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--green-deep)', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <CheckCircle2 size={16} />
               <span>Sustainable profitability & cash liquidity</span>
             </span>

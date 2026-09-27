@@ -34,7 +34,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '24px', margin: '32px 0 24px', paddingTop: '24px', borderTop: '1px solid var(--line)', fontSize: '13.5px' }}>
         <div>
-          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '12px' }}>
+          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '12px' }}>
             {t.footer.colCompany}
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--ink-soft)' }}>
@@ -45,7 +45,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         </div>
 
         <div>
-          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '12px' }}>
+          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '12px' }}>
             {t.footer.colCapabilities}
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--ink-soft)' }}>
@@ -57,7 +57,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         </div>
 
         <div>
-          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '12px' }}>
+          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '12px' }}>
             {t.footer.colMarkets}
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--ink-soft)' }}>
@@ -69,7 +69,7 @@ export default function Footer({ onOpenConsultation }: FooterProps) {
         </div>
 
         <div>
-          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '12px' }}>
+          <h4 style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '12px' }}>
             {t.footer.colCaseStudy}
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--ink-soft)' }}>

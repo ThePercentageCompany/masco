@@ -115,7 +115,7 @@ export default function ReversePricingCalculator() {
           <div className="calc-input-group">
             <label>
               <span>{labels.shelfPrice}</span>
-              <span style={{ fontWeight: 800, color: 'var(--green-deep)', background: 'var(--bg)', padding: '4px 10px', borderRadius: '8px', border: '1px solid var(--line)' }}>
+              <span style={{ fontWeight: 800, color: 'var(--masco-blue)', background: 'var(--bg)', padding: '4px 10px', borderRadius: '8px', border: '1px solid var(--line)' }}>
                 AED {shelfPrice.toFixed(2)}
               </span>
             </label>
@@ -210,9 +210,9 @@ export default function ReversePricingCalculator() {
         {/* Right Outputs */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {/* Main Wholesale Result Card */}
-          <div style={{ background: 'var(--green-dark)', color: '#ffffff', padding: '24px', borderRadius: '20px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+          <div style={{ background: 'linear-gradient(135deg, #0c1033 0%, #161c52 50%, #272B8D 100%)', color: '#ffffff', padding: '24px', borderRadius: '20px', display: 'flex', flexDirection: 'column', gap: '16px', boxShadow: '0 12px 30px rgba(12, 16, 51, 0.25)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green)' }}>
+              <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', color: '#ff7b7f' }}>
                 Calculated Strategic Output
               </span>
               <span style={{ fontSize: '11px', background: 'rgba(255,255,255,0.15)', padding: '3px 8px', borderRadius: '999px', fontWeight: 600 }}>
@@ -221,23 +221,23 @@ export default function ReversePricingCalculator() {
             </div>
 
             <div>
-              <div style={{ fontSize: '13px', color: '#c5d8cc' }}>{labels.wholesalePrice}</div>
-              <div style={{ fontSize: '38px', fontWeight: 900, color: 'var(--green)', letterSpacing: '-0.03em', margin: '4px 0' }}>
+              <div style={{ fontSize: '13px', color: '#c9d6ea' }}>{labels.wholesalePrice}</div>
+              <div style={{ fontSize: '38px', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em', margin: '4px 0' }}>
                 AED {targetWholesalePrice.toFixed(2)}
               </div>
-              <div style={{ fontSize: '13px', color: '#c5d8cc' }}>
+              <div style={{ fontSize: '13px', color: '#c9d6ea' }}>
                 Derived from AED {shelfPrice.toFixed(2)} consumer shelf price
               </div>
             </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.15)' }}>
               <div style={{ background: 'rgba(255,255,255,0.08)', padding: '12px', borderRadius: '12px' }}>
-                <div style={{ fontSize: '11px', color: '#c5d8cc' }}>{labels.brandGrossProfit}</div>
+                <div style={{ fontSize: '11px', color: '#c9d6ea' }}>{labels.brandGrossProfit}</div>
                 <div style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff' }}>AED {brandGrossProfit.toFixed(2)}</div>
               </div>
               <div style={{ background: 'rgba(255,255,255,0.08)', padding: '12px', borderRadius: '12px' }}>
-                <div style={{ fontSize: '11px', color: '#c5d8cc' }}>{labels.grossMarginPercent}</div>
-                <div style={{ fontSize: '20px', fontWeight: 800, color: 'var(--green)' }}>{brandGrossMarginPercent.toFixed(1)}%</div>
+                <div style={{ fontSize: '11px', color: '#c9d6ea' }}>{labels.grossMarginPercent}</div>
+                <div style={{ fontSize: '20px', fontWeight: 800, color: '#ff7b7f' }}>{brandGrossMarginPercent.toFixed(1)}%</div>
               </div>
             </div>
           </div>
@@ -254,7 +254,7 @@ export default function ReversePricingCalculator() {
               <div style={{ width: `${promoSlicePercent}%`, background: 'var(--masco-red)', height: '100%' }} title={`Promo: AED ${promoShare.toFixed(2)}`} />
               <div style={{ width: `${commSlicePercent}%`, background: 'var(--masco-gold)', height: '100%' }} title={`Commercial: AED ${commercialShare.toFixed(2)}`} />
               <div style={{ width: `${cogsSlicePercent}%`, background: 'var(--muted)', height: '100%' }} title={`COGS: AED ${cogs.toFixed(2)}`} />
-              <div style={{ width: `${profitSlicePercent}%`, background: 'var(--green-deep)', height: '100%' }} title={`Net Profit: AED ${brandGrossProfit.toFixed(2)}`} />
+              <div style={{ width: `${profitSlicePercent}%`, background: 'var(--masco-blue)', height: '100%' }} title={`Net Profit: AED ${brandGrossProfit.toFixed(2)}`} />
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px' }}>
@@ -274,7 +274,7 @@ export default function ReversePricingCalculator() {
                 <span style={{ color: 'var(--ink-soft)' }}>{labels.cogsSlice}</span>
                 <span style={{ fontWeight: 700 }}>AED {cogs.toFixed(2)}</span>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '4px', fontWeight: 800, color: 'var(--green-deep)', fontSize: '14px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', paddingTop: '4px', fontWeight: 800, color: 'var(--masco-blue)', fontSize: '14px' }}>
                 <span>{labels.brandNetProfit}</span>
                 <span>AED {brandGrossProfit.toFixed(2)} ({brandGrossMarginPercent.toFixed(1)}%)</span>
               </div>

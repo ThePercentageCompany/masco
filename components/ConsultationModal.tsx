@@ -68,7 +68,7 @@ export default function ConsultationModal({
         position: 'fixed',
         inset: 0,
         zIndex: 100,
-        backgroundColor: 'rgba(14, 42, 31, 0.65)',
+        backgroundColor: 'rgba(12, 16, 51, 0.75)',
         backdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',
@@ -113,7 +113,7 @@ export default function ConsultationModal({
         <div style={{ padding: '24px', overflowY: 'auto' }}>
           {isSubmitted ? (
             <div style={{ textAlign: 'center', padding: '32px 16px' }}>
-              <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'rgba(31, 138, 69, 0.12)', color: 'var(--green-deep)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>
+              <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'rgba(39, 43, 141, 0.12)', color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>
                 <CheckCircle2 size={32} />
               </div>
               <h3 style={{ fontSize: '20px', marginBottom: '8px' }}>

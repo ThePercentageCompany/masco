@@ -38,7 +38,7 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } {
   }
   const num = parseInt(cleanHex, 16);
   if (isNaN(num)) {
-    return { r: 14, g: 42, b: 31 };
+    return { r: 39, g: 43, b: 141 };
   }
   return {
     r: (num >> 16) & 255,
@@ -54,7 +54,7 @@ export function Particles({
   ease = 50,
   size = 1.2,
   refresh = false,
-  color = "#0e2a1f",
+  color = ["#272B8D", "#E4181D", "#01498D"],
   vx = 0,
   vy = 0,
 }: ParticlesProps) {

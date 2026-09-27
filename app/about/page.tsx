@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="section-head">
           <p className="eyebrow">{data.tag}</p>
           <h1>{data.title}</h1>
-          <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--green-deep)', margin: '16px 0 12px' }}>
+          <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--masco-blue)', margin: '16px 0 12px' }}>
             {data.introLead}
           </p>
           <p style={{ fontSize: '16px', color: 'var(--ink-soft)', lineHeight: 1.6, marginBottom: '24px' }}>
@@ -46,9 +46,9 @@ export default function AboutPage() {
             className="object-cover"
             priority
           />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(14,42,31,0.85) 0%, transparent 60%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(12,16,51,0.88) 0%, transparent 60%)' }} />
           <div style={{ position: 'absolute', bottom: '24px', left: '24px', right: '24px', color: '#ffffff' }}>
-            <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green)' }}>
+            <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-red)' }}>
               Boardroom Advisory
             </span>
             <p style={{ fontSize: '16px', fontWeight: 700, margin: '4px 0 0' }}>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               <div style={{ paddingTop: '12px', borderTop: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                 {pillar.highlights.map((h, hIdx) => (
                   <div key={hIdx} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '13px', color: 'var(--ink)' }}>
-                    <CheckCircle2 size={14} style={{ color: 'var(--green-deep)', flexShrink: 0 }} />
+                    <CheckCircle2 size={14} style={{ color: 'var(--masco-blue)', flexShrink: 0 }} />
                     <span>{h}</span>
                   </div>
                 ))}

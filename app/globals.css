@@ -1,25 +1,51 @@
 /* ==========================================================================
-   MASCO Business Consulting - The Percentage Creative Design System
-   Inspired by: https://thepercentagecreative.com/
+   MASCO Business Consulting - Brand Design System
+   Brand Palette Derived from: MASCO_Business_Consulting_Sharp.svg
+   - MASCO Crimson Red: #E4181D
+   - MASCO Royal Blue: #272B8D
+   - MASCO Corporate Blue: #01498D
+   - Deep Navy / Slate: #0C1033
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #eef4f0;
-  --bg-elev: #f7faf8;
+  /* Canvas & Elevation */
+  --bg: #f4f7fb;
+  --bg-elev: #ffffff;
   --white: #ffffff;
-  --ink: #0e2a1f;
-  --ink-soft: #3d564b;
-  --muted: #5c7468;
-  --line: #c9ddd2;
-  --green: #7cff6b;
-  --green-deep: #1f8a45;
-  --green-dark: #0e3b2a;
+  
+  /* Text & Ink */
+  --ink: #0c132e;
+  --ink-soft: #33415c;
+  --muted: #5c6f8e;
+  --line: #d8e2f0;
+  
+  /* Primary MASCO Brand Colors */
   --masco-red: #E4181D;
+  --masco-red-hover: #c91015;
+  --masco-red-light: rgba(228, 24, 29, 0.08);
+  --masco-red-glow: rgba(228, 24, 29, 0.28);
+  
+  --masco-blue: #272B8D;
+  --masco-blue-hover: #1e2273;
+  --masco-blue-corp: #01498D;
+  --masco-blue-dark: #0c1033;
+  --masco-blue-light: rgba(39, 43, 141, 0.08);
+  --masco-blue-glow: rgba(39, 43, 141, 0.25);
+  
   --masco-gold: #C8A66A;
-  --shadow: 0 16px 40px rgba(14, 42, 31, 0.06);
-  --shadow-hover: 0 20px 48px rgba(14, 42, 31, 0.12);
+
+  /* Semantic Aliases */
+  --green: var(--masco-red);
+  --green-deep: var(--masco-blue);
+  --green-dark: var(--masco-blue-dark);
+  --brand-primary: var(--masco-blue);
+  --brand-accent: var(--masco-red);
+
+  /* Shadows & Radius */
+  --shadow: 0 16px 40px rgba(12, 19, 46, 0.06);
+  --shadow-hover: 0 20px 48px rgba(39, 43, 141, 0.12);
   --radius: 22px;
   --radius-sm: 12px;
   --radius-lg: 28px;
@@ -103,7 +129,7 @@ img {
   padding: 16px 0;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(201, 221, 210, 0.4);
+  border-bottom: 1px solid rgba(216, 226, 240, 0.6);
 }
 
 .logo {
@@ -116,7 +142,7 @@ img {
 }
 
 .logo-img {
-  height: 38px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -139,8 +165,9 @@ img {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--ink);
+  color: var(--masco-blue);
   background-color: var(--white);
+  box-shadow: 0 2px 8px rgba(39, 43, 141, 0.08);
 }
 
 .nav-actions {
@@ -171,24 +198,35 @@ img {
 }
 
 .btn-primary {
-  background: var(--green);
-  color: var(--green-dark);
-  box-shadow: 0 4px 14px rgba(124, 255, 107, 0.28);
+  background: var(--masco-red);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(228, 24, 29, 0.28);
 }
 
 .btn-primary:hover {
-  background: #8dff7d;
-  box-shadow: 0 6px 20px rgba(124, 255, 107, 0.38);
+  background: var(--masco-red-hover);
+  box-shadow: 0 6px 22px rgba(228, 24, 29, 0.4);
+}
+
+.btn-secondary {
+  background: var(--masco-blue);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(39, 43, 141, 0.24);
+}
+
+.btn-secondary:hover {
+  background: var(--masco-blue-hover);
+  box-shadow: 0 6px 22px rgba(39, 43, 141, 0.35);
 }
 
 .btn-outline {
   background: var(--white);
-  color: var(--ink);
+  color: var(--masco-blue);
   border: 1px solid var(--line);
 }
 
 .btn-outline:hover {
-  border-color: var(--green-deep);
+  border-color: var(--masco-blue);
   background: var(--bg-elev);
 }
 
@@ -200,11 +238,11 @@ img {
 }
 
 .btn-ghost:hover {
-  color: var(--green-deep);
-  background: rgba(31, 138, 69, 0.06);
+  color: var(--masco-blue);
+  background: rgba(39, 43, 141, 0.06);
 }
 
-/* InteractiveHoverButton - The Percentage Creative Signature */
+/* InteractiveHoverButton - Signature Component */
 .interactive-hover-btn {
   position: relative;
   display: inline-flex;
@@ -221,14 +259,14 @@ img {
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(14, 42, 31, 0.05);
+  box-shadow: 0 2px 8px rgba(12, 19, 46, 0.05);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .interactive-hover-btn:hover {
-  border-color: var(--green-deep);
+  border-color: var(--masco-red);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(124, 255, 107, 0.35);
+  box-shadow: 0 6px 20px rgba(228, 24, 29, 0.32);
 }
 
 .btn-content-wrap {
@@ -242,13 +280,13 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--green-deep);
+  background-color: var(--masco-red);
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
 }
 
 .interactive-hover-btn:hover .btn-dot {
   transform: scale(36);
-  background-color: var(--green);
+  background-color: var(--masco-red);
 }
 
 .interactive-hover-btn:hover .btn-content-wrap {
@@ -263,7 +301,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--green-dark);
+  color: #ffffff;
   font-weight: 700;
   transform: translateX(-24px);
   opacity: 0;
@@ -334,10 +372,10 @@ img {
   display: inline-flex;
   align-items: center;
   transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%230e2a1f' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%230c132e' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
-  box-shadow: 0 1px 3px rgba(14, 42, 31, 0.04);
+  box-shadow: 0 1px 3px rgba(12, 19, 46, 0.04);
 }
 
 [dir="rtl"] .lang-select {
@@ -346,14 +384,14 @@ img {
 }
 
 .lang-select:hover {
-  border-color: var(--ink-soft);
+  border-color: var(--masco-blue);
   transform: translateY(-0.5px);
   background-color: var(--bg-elev);
 }
 
 .lang-select:focus {
-  border-color: var(--green-deep);
-  box-shadow: 0 0 0 2.5px rgba(31, 138, 69, 0.18);
+  border-color: var(--masco-blue);
+  box-shadow: 0 0 0 2.5px rgba(39, 43, 141, 0.18);
 }
 
 .menu-btn {
@@ -417,10 +455,10 @@ img {
   margin: 0 auto 16px;
   font-size: 13.5px;
   font-weight: 700;
-  color: var(--green-deep);
+  color: var(--masco-red);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: rgba(31, 138, 69, 0.08);
+  background: rgba(228, 24, 29, 0.08);
   padding: 6px 14px;
   border-radius: 999px;
   display: inline-flex;
@@ -525,7 +563,7 @@ img {
 .logo-strip-velocity a:hover,
 .logo-strip-velocity .strip-item:hover {
   opacity: 1;
-  color: var(--green-deep);
+  color: var(--masco-blue);
   transform: translateY(-1px);
 }
 
@@ -623,7 +661,7 @@ img {
 .steps article:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
-  border-color: #9fd7b4;
+  border-color: #9cb1d9;
 }
 
 .feature-card h3,
@@ -667,7 +705,7 @@ img {
 .audience-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
-  border-color: #9fd7b4;
+  border-color: #9cb1d9;
 }
 
 .audience-art {
@@ -702,7 +740,7 @@ img {
   padding: 24px 0;
 }
 
-/* Dark CTA Band - The Percentage Creative Signature */
+/* Dark CTA Band */
 .cta-band {
   display: flex;
   align-items: center;
@@ -710,11 +748,12 @@ img {
   gap: 24px;
   padding: 44px 40px;
   margin: 36px 0;
-  background: var(--green-dark);
-  color: #eef8f1;
+  background: linear-gradient(135deg, #0c1033 0%, #161c52 50%, #272B8D 100%);
+  color: #f0f4ff;
   border-radius: 26px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 48px rgba(12, 16, 51, 0.18);
 }
 
 .cta-band h2 {
@@ -725,7 +764,7 @@ img {
 }
 
 .cta-band p {
-  color: #c5d8cc;
+  color: #c5d2ea;
   font-size: 16px;
   max-width: 600px;
 }
@@ -738,10 +777,10 @@ img {
 .step-n {
   display: inline-block;
   margin-bottom: 14px;
-  color: var(--green-deep);
+  color: var(--masco-blue);
   font-weight: 800;
   font-size: 14px;
-  background: rgba(31, 138, 69, 0.08);
+  background: rgba(39, 43, 141, 0.08);
   padding: 4px 10px;
   border-radius: 999px;
 }
@@ -768,7 +807,7 @@ img {
   padding: 4px 10px;
   border-radius: 999px;
   background: var(--bg);
-  color: var(--green-deep);
+  color: var(--masco-blue);
   font-size: 12px;
   font-weight: 600;
 }
@@ -781,7 +820,7 @@ img {
 }
 
 .client-card:hover .client-ext-icon {
-  color: var(--green-deep);
+  color: var(--masco-red);
   transform: translate(2px, -2px);
 }
 
@@ -799,7 +838,7 @@ img {
   margin: 0 0 10px;
   font-size: 13px;
   font-weight: 700;
-  color: var(--green-deep);
+  color: var(--masco-blue);
   text-transform: uppercase;
 }
 
@@ -807,7 +846,7 @@ img {
   display: inline-block;
   margin-top: 16px;
   font-weight: 600;
-  color: var(--green-deep);
+  color: var(--masco-red);
 }
 
 /* Contact 2-Column Section */
@@ -844,7 +883,7 @@ img {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--green-deep);
+  background: var(--masco-red);
 }
 
 [dir="rtl"] .contact-points li::before {
@@ -883,9 +922,9 @@ img {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--green-deep);
+  border-color: var(--masco-blue);
   background: var(--white);
-  box-shadow: 0 0 0 3px rgba(31, 138, 69, 0.15);
+  box-shadow: 0 0 0 3px rgba(39, 43, 141, 0.15);
 }
 
 .contact-form .btn {
@@ -924,7 +963,7 @@ img {
 
 .calc-range {
   width: 100%;
-  accent-color: var(--green-deep);
+  accent-color: var(--masco-red);
   cursor: pointer;
 }
 
@@ -939,7 +978,7 @@ img {
 .calc-metric-val {
   font-size: 24px;
   font-weight: 800;
-  color: var(--green-deep);
+  color: var(--masco-blue);
 }
 
 .calc-metric-lbl {
@@ -985,7 +1024,7 @@ img {
 }
 
 .footer-links a:hover {
-  color: var(--green-deep);
+  color: var(--masco-red);
 }
 
 /* Text Animate Keyframes */

@@ -46,7 +46,7 @@ export default function MobileFloatingCta({ onOpenConsultation }: MobileFloating
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'var(--green-deep)',
+          color: 'var(--masco-blue)',
           boxShadow: 'var(--shadow)',
         }}
         aria-label="WhatsApp"

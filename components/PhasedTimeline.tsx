@@ -29,8 +29,8 @@ export default function PhasedTimeline() {
               style={{
                 padding: '18px 20px',
                 borderRadius: '18px',
-                border: isActive ? '2px solid var(--green-deep)' : '1px solid var(--line)',
-                background: isActive ? 'var(--green-dark)' : 'var(--bg-elev)',
+                border: isActive ? '2px solid var(--masco-blue)' : '1px solid var(--line)',
+                background: isActive ? 'linear-gradient(135deg, #0c1033 0%, #272B8D 100%)' : 'var(--bg-elev)',
                 color: isActive ? '#ffffff' : 'var(--ink)',
                 textAlign: 'start',
                 cursor: 'pointer',
@@ -38,10 +38,10 @@ export default function PhasedTimeline() {
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: isActive ? 'var(--green)' : 'var(--green-deep)' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: isActive ? '#ff7b7f' : 'var(--masco-blue)' }}>
                   Phase 0{phase.phaseNumber}
                 </span>
-                <span style={{ fontSize: '12px', color: isActive ? '#c5d8cc' : 'var(--muted)', fontWeight: 600 }}>
+                <span style={{ fontSize: '12px', color: isActive ? '#d8e2f0' : 'var(--muted)', fontWeight: 600 }}>
                   {phase.timeline}
                 </span>
               </div>
@@ -52,7 +52,7 @@ export default function PhasedTimeline() {
                   ? 'Tier-2 Coops & Al Maya'
                   : 'Major Hypermarkets'}
               </h4>
-              <div style={{ fontSize: '12px', fontWeight: 600, color: isActive ? 'var(--green)' : 'var(--masco-red)' }}>
+              <div style={{ fontSize: '12px', fontWeight: 600, color: isActive ? '#ff7b7f' : 'var(--masco-red)' }}>
                 {phase.riskLevel}
               </div>
             </button>
@@ -77,7 +77,7 @@ export default function PhasedTimeline() {
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px' }}>
               {/* Left Column */}
               <div>
-                <span style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', display: 'block', marginBottom: '6px' }}>
+                <span style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', display: 'block', marginBottom: '6px' }}>
                   Target Commercial Accounts
                 </span>
                 <h3 style={{ fontSize: '22px', margin: '0 0 16px', color: 'var(--ink)' }}>
@@ -101,7 +101,7 @@ export default function PhasedTimeline() {
                         gap: '6px',
                       }}
                     >
-                      <Building2 size={14} style={{ color: 'var(--green-deep)' }} />
+                      <Building2 size={14} style={{ color: 'var(--masco-blue)' }} />
                       <span>{account}</span>
                     </div>
                   ))}
@@ -121,7 +121,7 @@ export default function PhasedTimeline() {
               <div>
                 <div style={{ padding: '24px', background: 'var(--white)', borderRadius: '18px', border: '1px solid var(--line)', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--green-deep)', fontWeight: 700, fontSize: '12.5px', textTransform: 'uppercase', marginBottom: '10px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--masco-blue)', fontWeight: 700, fontSize: '12.5px', textTransform: 'uppercase', marginBottom: '10px' }}>
                       <ShieldCheck size={16} />
                       <span>Risk Management Objective</span>
                     </div>
@@ -132,15 +132,15 @@ export default function PhasedTimeline() {
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingTop: '14px', borderTop: '1px solid var(--line)', fontSize: '12.5px', color: 'var(--ink-soft)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <CheckCircle2 size={14} style={{ color: 'var(--green-deep)' }} />
+                      <CheckCircle2 size={14} style={{ color: 'var(--masco-blue)' }} />
                       <span>Validated inventory replenishment</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <CheckCircle2 size={14} style={{ color: 'var(--green-deep)' }} />
+                      <CheckCircle2 size={14} style={{ color: 'var(--masco-blue)' }} />
                       <span>Controlled working capital exposure</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                      <CheckCircle2 size={14} style={{ color: 'var(--green-deep)' }} />
+                      <CheckCircle2 size={14} style={{ color: 'var(--masco-blue)' }} />
                       <span>Zero premature listing fee burn</span>
                     </div>
                   </div>

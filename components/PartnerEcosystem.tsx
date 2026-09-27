@@ -56,12 +56,12 @@ export default function PartnerEcosystem() {
       {/* Commercial Partnership Philosophy Card */}
       <div className="cta-band" style={{ margin: 0 }}>
         <div>
-          <span style={{ background: 'rgba(124, 255, 107, 0.15)', color: 'var(--green)', padding: '4px 12px', borderRadius: '999px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', display: 'inline-block', marginBottom: '12px' }}>
+          <span style={{ background: 'rgba(228, 24, 29, 0.18)', color: '#ff7b7f', padding: '4px 12px', borderRadius: '999px', fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', display: 'inline-block', marginBottom: '12px' }}>
             Commercial Integrity
           </span>
           <h2>{data.philosophyTitle}</h2>
           <p style={{ marginBottom: '20px' }}>{data.philosophyBody}</p>
-          <div style={{ padding: '12px 16px', borderRadius: '12px', background: 'rgba(255,255,255,0.08)', fontSize: '12.5px', color: '#c5d8cc' }}>
+          <div style={{ padding: '12px 16px', borderRadius: '12px', background: 'rgba(255,255,255,0.08)', fontSize: '12.5px', color: '#d8e2f0' }}>
             {data.disclaimer}
           </div>
         </div>

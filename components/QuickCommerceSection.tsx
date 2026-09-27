@@ -33,12 +33,12 @@ export default function QuickCommerceSection() {
               <span className="step-n" style={{ margin: 0 }}>
                 {platform.name}
               </span>
-              <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', padding: '3px 8px', borderRadius: '6px', background: 'rgba(31, 138, 69, 0.1)', color: 'var(--green-deep)' }}>
+              <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', padding: '3px 8px', borderRadius: '6px', background: 'rgba(39, 43, 141, 0.1)', color: 'var(--masco-blue)' }}>
                 Q-Commerce
               </span>
             </div>
 
-            <div style={{ fontSize: '13.5px', fontWeight: 700, color: 'var(--green-deep)', marginBottom: '8px' }}>
+            <div style={{ fontSize: '13.5px', fontWeight: 700, color: 'var(--masco-blue)', marginBottom: '8px' }}>
               {platform.service}
             </div>
             <p style={{ fontSize: '13px', color: 'var(--ink-soft)', margin: 0, lineHeight: 1.5 }}>

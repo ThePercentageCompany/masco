@@ -54,7 +54,7 @@ export default function ContactSection({ onOpenConsultation }: ContactSectionPro
         message: isRtl
           ? 'تم استلام طلبك بنجاح! سيتواصل معك مستشارنا التجاري خلال 24 ساعة.'
           : 'Thank you! Your strategic consultation brief has been submitted. Our FMCG partner will contact you within 24 hours.',
-        color: 'var(--green-deep)',
+        color: 'var(--masco-blue)',
       });
       setFormData({
         fullName: '',
@@ -90,7 +90,7 @@ export default function ContactSection({ onOpenConsultation }: ContactSectionPro
         {/* Direct Contact Points Cards */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginTop: '28px' }}>
           <div style={{ padding: '16px', background: 'var(--white)', border: '1px solid var(--line)', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'rgba(31, 138, 69, 0.1)', color: 'var(--green-deep)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'rgba(39, 43, 141, 0.1)', color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Mail size={18} />
             </div>
             <div>
@@ -102,7 +102,7 @@ export default function ContactSection({ onOpenConsultation }: ContactSectionPro
           </div>
 
           <div style={{ padding: '16px', background: 'var(--white)', border: '1px solid var(--line)', borderRadius: '16px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'rgba(31, 138, 69, 0.1)', color: 'var(--green-deep)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '36px', height: '36px', borderRadius: '10px', background: 'rgba(39, 43, 141, 0.1)', color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <Phone size={18} />
             </div>
             <div>

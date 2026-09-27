@@ -28,8 +28,8 @@ export default function RegionalMarketMap() {
               style={{
                 padding: '18px 20px',
                 borderRadius: '18px',
-                border: isActive ? '2px solid var(--green-deep)' : '1px solid var(--line)',
-                background: isActive ? 'var(--green-dark)' : 'var(--bg-elev)',
+                border: isActive ? '2px solid var(--masco-blue)' : '1px solid var(--line)',
+                background: isActive ? 'linear-gradient(135deg, #0c1033 0%, #272B8D 100%)' : 'var(--bg-elev)',
                 color: isActive ? '#ffffff' : 'var(--ink)',
                 textAlign: 'start',
                 cursor: 'pointer',
@@ -37,10 +37,10 @@ export default function RegionalMarketMap() {
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: isActive ? 'var(--green)' : 'var(--green-deep)' }}>
+                <span style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', color: isActive ? '#ff7b7f' : 'var(--masco-blue)' }}>
                   {m.code}
                 </span>
-                <span style={{ fontSize: '12px', fontWeight: 700, color: isActive ? '#c5d8cc' : 'var(--green-deep)' }}>
+                <span style={{ fontSize: '12px', fontWeight: 700, color: isActive ? '#d8e2f0' : 'var(--muted)' }}>
                   {m.status}
                 </span>
               </div>
@@ -67,7 +67,7 @@ export default function RegionalMarketMap() {
           >
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px' }}>
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--green-deep)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', marginBottom: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--masco-blue)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', marginBottom: '8px' }}>
                   <MapPin size={15} />
                   <span>Market Footprint & Active Retail Channels</span>
                 </div>
@@ -92,20 +92,20 @@ export default function RegionalMarketMap() {
 
               <div>
                 <div style={{ padding: '24px', background: 'var(--white)', borderRadius: '18px', border: '1px solid var(--line)', height: '100%' }}>
-                  <div style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--green-deep)', marginBottom: '14px' }}>
+                  <div style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', color: 'var(--masco-blue)', marginBottom: '14px' }}>
                     Regulatory & Commercial Readiness
                   </div>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: 'var(--ink-soft)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <CheckCircle2 size={16} style={{ color: 'var(--green-deep)', flexShrink: 0 }} />
+                      <CheckCircle2 size={16} style={{ color: 'var(--masco-blue)', flexShrink: 0 }} />
                       <span>Direct category buyer relationship networks</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <CheckCircle2 size={16} style={{ color: 'var(--green-deep)', flexShrink: 0 }} />
+                      <CheckCircle2 size={16} style={{ color: 'var(--masco-blue)', flexShrink: 0 }} />
                       <span>Reverse pricing tailored to local currency & VAT</span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      <CheckCircle2 size={16} style={{ color: 'var(--green-deep)', flexShrink: 0 }} />
+                      <CheckCircle2 size={16} style={{ color: 'var(--masco-blue)', flexShrink: 0 }} />
                       <span>Distributor agreement & rebate governance</span>
                     </div>
                   </div>

@@ -54,7 +54,7 @@ export default function EcommercePage() {
                 </div>
 
                 <div style={{ padding: '16px', borderRadius: '14px', background: 'var(--bg-elev)', border: '1px solid var(--line)', marginBottom: '16px', fontSize: '13px', color: 'var(--ink)' }}>
-                  <strong style={{ color: 'var(--green-deep)', display: 'block', marginBottom: '4px' }}>Key Strategic Advantage:</strong>
+                  <strong style={{ color: 'var(--masco-blue)', display: 'block', marginBottom: '4px' }}>Key Strategic Advantage:</strong>
                   {plat.benefit}
                 </div>
 
@@ -63,7 +63,7 @@ export default function EcommercePage() {
                 </p>
               </div>
 
-              <div style={{ paddingTop: '16px', borderTop: '1px solid var(--line)', fontSize: '12.5px', fontWeight: 600, color: 'var(--green-deep)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ paddingTop: '16px', borderTop: '1px solid var(--line)', fontSize: '12.5px', fontWeight: 600, color: 'var(--masco-blue)', display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <CheckCircle2 size={16} />
                 <span>14-day automated disbursement into operating capital.</span>
               </div>

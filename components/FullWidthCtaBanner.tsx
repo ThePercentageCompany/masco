@@ -15,7 +15,7 @@ export default function FullWidthCtaBanner({ onOpenConsultation }: FullWidthCtaB
   return (
     <section className="cta-band" id="cta-banner">
       <div>
-        <p className="eyebrow" style={{ background: 'rgba(255,255,255,0.12)', color: 'var(--green)', margin: '0 0 12px' }}>
+        <p className="eyebrow" style={{ background: 'rgba(255,255,255,0.12)', color: '#ff7b7f', margin: '0 0 12px' }}>
           FMCG Commercial Strategy Practice
         </p>
         <h2>{t.ctaBanner.title}</h2>
